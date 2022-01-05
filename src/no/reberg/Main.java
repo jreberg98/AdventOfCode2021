@@ -9,5 +9,6 @@ public class Main {
 
         System.out.println("\n---  2. desember  ---");
         System.out.println(Two.first());
+        System.out.println(Two.second());
     }
 }
