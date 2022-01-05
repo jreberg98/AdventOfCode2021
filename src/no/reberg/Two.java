@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Two {
 
     public static int first() {
-        ArrayList<ArrayList<String>> data = Input.listOfStrings("data/2-1.csv");
+        ArrayList<ArrayList<String>> data = Input.listOfListOfStrings("data/2-1.csv");
 
         int depth = 0;
         int forward = 0;
@@ -30,7 +30,7 @@ public class Two {
     }
 
     public static int second() {
-        ArrayList<ArrayList<String>> data = Input.listOfStrings("data/2-1.csv");
+        ArrayList<ArrayList<String>> data = Input.listOfListOfStrings("data/2-1.csv");
 
         int depth = 0;
         int forward = 0;

@@ -31,7 +31,7 @@ public class Input {
         return arrayList;
     }
 
-    public static ArrayList<ArrayList<String>> listOfStrings (String fileName) {
+    public static ArrayList<ArrayList<String>> listOfListOfStrings(String fileName) {
         File file = new File(fileName);
 
         ArrayList<ArrayList<String>> arrayList = new ArrayList<>();
@@ -49,6 +49,26 @@ public class Input {
 
                 arrayList.add(temp);
             }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return arrayList;
+    }
+
+    public static ArrayList<String> listOfStrings(String fileName) {
+        File file = new File(fileName);
+        ArrayList<String> arrayList = new ArrayList<>();
+
+        try {
+            Scanner scanner = new Scanner(file);
+            String temp;
+
+            while (scanner.hasNext()) {
+                temp = scanner.next();
+                arrayList.add(temp);
+            }
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

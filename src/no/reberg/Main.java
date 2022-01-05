@@ -10,5 +10,8 @@ public class Main {
         System.out.println("\n---  2. desember  ---");
         System.out.println(Two.first());
         System.out.println(Two.second());
+
+        System.out.println("\n---  3. desember  ---");
+        System.out.println(Input.listOfStrings("data/3.csv"));
     }
 }
