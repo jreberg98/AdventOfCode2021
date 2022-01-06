@@ -13,5 +13,6 @@ public class Main {
 
         System.out.println("\n---  3. desember  ---");
         System.out.println(Three.first());
+        System.out.println(Three.second());
     }
 }
