@@ -12,6 +12,6 @@ public class Main {
         System.out.println(Two.second());
 
         System.out.println("\n---  3. desember  ---");
-        System.out.println(Input.listOfStrings("data/3.csv"));
+        System.out.println(Three.first());
     }
 }
