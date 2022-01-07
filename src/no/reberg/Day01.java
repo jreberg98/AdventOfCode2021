@@ -2,7 +2,7 @@ package no.reberg;
 
 import java.util.ArrayList;
 
-public class One {
+public class Day01 {
     public static int first (){
         ArrayList<Integer> data = Input.listOfInts("data/1-1.csv");
 

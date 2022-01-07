@@ -5,7 +5,7 @@ import no.reberg.model.BingoBoard;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Four {
+public class Day04 {
     public static int first() {
         // Loading data
         ArrayList<String> data = Input.listOfStrings("data/4.csv");

@@ -1,9 +1,8 @@
 package no.reberg;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class Three {
+public class Day03 {
 
     public static int first() {
         ArrayList<String> data = Input.listOfStrings("data/3.csv");
