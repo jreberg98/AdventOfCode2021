@@ -64,8 +64,8 @@ public class Input {
             Scanner scanner = new Scanner(file);
             String temp;
 
-            while (scanner.hasNext()) {
-                temp = scanner.next();
+            while (scanner.hasNextLine()) {
+                temp = scanner.nextLine();
                 arrayList.add(temp);
             }
 
