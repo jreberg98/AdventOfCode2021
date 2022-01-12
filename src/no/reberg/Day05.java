@@ -199,7 +199,6 @@ public class Day05 {
             int y = y1;
 
             while (x != x2 + dx || y != y2 + dy) {
-                System.out.println(x + " " + y);
                 if (x1 != x2 && y1 != y2) {
                     diagonalLines[x][y]++;
                 } else {
