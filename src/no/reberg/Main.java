@@ -18,5 +18,9 @@ public class Main {
         System.out.println("\n---  4. desember  ---");
         System.out.println(Day04.first());
         System.out.println(Day04.second());
+
+        System.out.println("\n---  5. desember  ---");
+        System.out.println(Day05.first());
+        System.out.println(Day05.second());
     }
 }
