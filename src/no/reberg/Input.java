@@ -41,11 +41,10 @@ public class Input {
             ArrayList<String> temp;
 
             while (scanner.hasNext()) {
-                temp = new ArrayList<>();
                 String line = scanner.nextLine();
                 String[] splitted = line.split(" ");
 
-                temp.addAll(Arrays.asList(splitted));
+                temp = new ArrayList<>(Arrays.asList(splitted));
 
                 arrayList.add(temp);
             }
@@ -74,5 +73,29 @@ public class Input {
         }
 
         return arrayList;
+    }
+
+    public static ArrayList<Integer> intsSeparatedByComma(String fileName) {
+        ArrayList<Integer> temp = new ArrayList<>();
+
+        File file = new File(fileName);
+
+        try {
+            Scanner scanner = new Scanner(file);
+
+            String string = scanner.next();
+
+            String[] strings = string.split(",");
+
+            for (String s : strings) {
+                temp.add(Integer.parseInt(s));
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
+        return temp;
     }
 }
