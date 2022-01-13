@@ -30,4 +30,33 @@ public class Day06 {
 
         return data.size();
     }
+
+    public static long second () {
+        ArrayList<Integer> data = Input.intsSeparatedByComma("data/6.csv");
+
+        long[] fish = new long[10];
+
+        for (int i : data) {
+            fish[i]++;
+        }
+
+        for (int i = 0; i < 256; i++) {
+            fish[9] = fish[0];
+            fish[7] += fish[0];
+
+            for (int j = 1; j < fish.length; j++) {
+                fish[j -1] = fish[j];
+            }
+            fish[9] = 0;
+        }
+
+        long counter = 0;
+        for (long i : fish) {
+            counter += i;
+        }
+
+        return counter;
+
+
+    }
 }
