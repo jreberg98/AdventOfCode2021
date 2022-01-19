@@ -98,4 +98,30 @@ public class Input {
 
         return temp;
     }
+
+    public static ArrayList<ArrayList<Integer>> dobbelListOfDigits(String fileName) {
+        ArrayList<ArrayList<Integer>> temp = new ArrayList<>();
+
+        File file = new File(fileName);
+
+        try {
+            Scanner scanner = new Scanner(file);
+
+
+            while (scanner.hasNextLine()) {
+                String string = scanner.nextLine();
+                ArrayList<Integer> current = new ArrayList<>();
+                String[] strings = string.split("");
+                for (String s : strings) {
+                    current.add(Integer.parseInt(s));
+                }
+                temp.add(current);
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return temp;
+    }
 }
